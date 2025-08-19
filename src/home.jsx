@@ -6,7 +6,6 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'remixicon/fonts/remixicon.css';
 import "./home.css";
-import Logo from "../src/assets/tharwanirealtylogo.jpeg";
 import TabLayout from "./Components/html/tabLayout";
 import EnquiryPopup from "../src/Components/html/popup"; 
 
@@ -88,15 +87,7 @@ function Home({ onBrochureClick }) {
           <div className="underline" />
 
           <p>
-            Mohan Precious Greens is a residential project by the Mohan Group,
-            offering thoughtfully designed 1 & 2 BHK Homes with a focus on
-            modern living and sustainability. The project features over 30
-            lifestyle amenities, inpmncluding a lap pool, clubhouse, mini-theatre,
-            gym, spa, squash court, skating rink, cycling track, aroma gardens,
-            and dedicated zones for seniors and children. Its architecture
-            promotes eco-conscious living with green decks, landscaped gardens,
-            and sustainable infrastructure, creating a healthy and vibrant
-            community environment.
+           Over the last couple of decades, Tharwani Realty has prided itself on its heritage of excellence, the spirit of entrepreneurship, and strong values. These values and unprecedented vision have resulted in the birth of its many successful luxurious projects such as Tharwani Rosewood Heights and Tharwani Heritage, to name a few. Commitment to excellence and the drive to the transform lives of its customers is what sets the Realty apart.Going forward, Tharwani Realty will merge the philosophy of innovation, sustainability, and excellence into the real estate industry through its upcoming world-class projects that are a combination of a legacy of excellence and trust with a commitment to cutting-edge design and technology.
           </p>
 
           {showMore && (
