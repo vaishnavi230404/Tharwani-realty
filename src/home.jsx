@@ -118,7 +118,7 @@ function Home({ onBrochureClick }) {
         </div>
 
         <div className="project-image" >
-          <img  alt="Mohan Precious Greens" />
+          <img  alt="Tharwani realty"/>
         </div>
       </div>
 
@@ -179,22 +179,21 @@ function Home({ onBrochureClick }) {
           ))}
         </div>
       </section> */}
+      
+<div className="map-container">
+      <iframe
+        title="Tharwani Realty Location"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.941269792469!2d73.14923157518198!3d19.19947038202539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7965f5675f9d7%3A0x52df5a14ac70b2b3!2sTharwani%20Realty%2C%20Tharwani%20Solitaire!5e0!3m2!1sen!2sin!4v1693481612345!5m2!1sen!2sin"
+        width="100%"
+        height="450"
+        style={{ border: 0 }}
+        allowFullScreen=""
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+  );
 
-      <div className="location-section" id="location">
-        <h2 className="location-heading">Location</h2>
-        <div className="underline" />
-
-        <div className="map-container">
-          <iframe
-            title="Mohan Precious Greens Location"
-            width="100%"
-            height="250"
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-      </div>
 
       <TabLayout onBrochureClick={onBrochureClick}/>
 
