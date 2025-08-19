@@ -1,0 +1,152 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 80px;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 70px;
+  margin-right: 10px;
+}
+
+.text-info {
+  line-height: 1.2;
+}
+
+.project-name {
+  font-weight: bold;
+  font-size: 14px;
+  color: #1b4d2f;
+}
+
+.green-text {
+  color: #76b947;
+}
+
+.location {
+  font-size: 10px;
+  color: #666;
+}
+
+.navbar-center {
+  display: flex;
+  gap: 50px;
+}
+
+.nav-item {
+  font-size: 20px;
+  color: #111;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  padding-bottom: 4px;
+}
+
+.nav-item:hover {
+  color: #226d3d;
+}
+.nav-item {
+  font-size: 18px;
+  font-family: sans-serif;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.nav-item:hover i {
+  animation: jump 0.6s ease;
+}
+
+@keyframes jump {
+  0%   { transform: translateY(0); }
+  30%  { transform: translateY(-8px); }
+  50%  { transform: translateY(4px); }
+  70%  { transform: translateY(-4px); }
+  100% { transform: translateY(0); }
+}
+
+
+.nav-item.active {
+  font-weight: bold;
+  color: #226d3d;
+  border-bottom: 2px solid #226d3d;
+}
+
+.navbar-right .blox-logo {
+  height: 22px;
+}
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px 16px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #fff;
+  }
+
+  .navbar-left {
+    flex: 1;
+  }
+
+  .navbar-center {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  .navbar-center.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 28px;
+    color: #111;
+    cursor: pointer;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .nav-item {
+    font-size: 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+    gap: 8px;
+    color: #111;
+  }
+
+  .nav-item:hover {
+    color: #226d3d;
+  }
+}

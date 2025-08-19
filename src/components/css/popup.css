@@ -1,0 +1,323 @@
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background: white;
+  border-radius: 16px;
+  width: 650px;
+  max-width: 95%;
+  position: relative;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  font-family: 'Poppins', sans-serif;
+  padding:20px 0px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+}
+
+.popup-heading {
+  font-size: 24px;
+  font-weight: 600;
+  color: #00703C;
+  margin-bottom: 6px;
+  padding-left: 20px;
+}
+
+.popup-overlay .underline {
+  width: 60px;
+  height: 3px;
+  background: #838383;
+  margin-bottom: 20px;  
+  display: flex;
+  margin:10px 0px;
+  margin-left: 20px;
+}
+
+.popup-body {
+  display: flex;
+  gap: 20px;
+}
+
+.popup-left {
+   display:block;
+  flex: 1;
+  background-color: #f3f6f5;
+  border-radius: 0px 30px 30px 0px;
+  padding: 20px;
+  text-align: center;
+}
+
+.we-promise-box {
+  background-color: #f4f4f4;
+  border-radius: 20px;
+  width: 220px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.we-promise-header {
+  background-color: #00703C;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  padding: 6px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.we-promise-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.we-promise-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  color: #00703C;
+  font-size: 14px;
+}
+
+.we-promise-list li i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.we-promise-list strong {
+  font-weight: 600;
+  color: #00703C;
+}
+
+.we-promise-list span {
+  font-size: 12px;
+  color: #666;
+  text-align: left;
+}
+
+.popup-right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+}
+
+.form-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  width: 90%;
+}
+
+.phone-input {
+  display: flex;
+  align-items: center;
+  width: 80%;
+}
+
+ .react-tel-input {
+  width: 90% !important;
+ }
+
+.country-code {
+  padding: 10px;
+  background: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.checkbox-area {
+  font-size: 12px;
+  line-height: 1.4;
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.checkbox-area input[type="checkbox"] {
+  margin-top: 2px;
+}
+
+.checkbox-area label{
+  font-size: 8px;
+  width: 85%;
+}
+
+.checkbox-area label a {
+  color: #00703C;
+  text-decoration: none;
+  margin-left: 2px;
+}
+
+.submit-btn {
+  background-color: #00703C;
+  color: white;
+  padding: 10px 20px;
+  font-size: 15px;
+  width: fit-content;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+  margin: 0px auto;
+}
+
+.submit-btn:hover {
+  transform: scale(1.03);
+}
+
+.availability-box {
+  border: 2px solid #00703C;
+  border-radius: 0px 40px 0px 40px;
+  padding: 30px 20px 20px;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.availability-header {
+  background-color: #00703C;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 6px 16px;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 0 0 15px 15px;
+}
+
+.availability-options {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.option {
+  font-size: 13px;
+  color: #00703C;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+@media (max-width: 768px) {
+  .popup-overlay {
+    align-items: flex-start;
+    padding-top: 40px; 
+  }
+
+  .popup-content {
+    width: 95%;
+    padding: 15px 0;
+    border-radius: 12px;
+  }
+
+  .popup-body {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .popup-left {
+    border-radius: 20px;
+    padding: 15px;
+    display: none;
+  }  
+
+  .popup-right {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .form-input{
+    width: 100%;
+  }
+
+  .custom-phone-container.react-tel-input{
+    width: 80% !important;
+    margin:0 auto;
+  }
+  .checkbox-area {
+    flex-direction: row;
+    align-items: center;
+    font-size: 10px;
+  }
+
+  .checkbox-area label {
+    font-size: 10px;
+    width: auto;
+  }
+
+  .submit-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+    width: fit-content;
+  }
+
+  .availability-box {
+    border-radius: 0px 40px 0px 40px;
+    padding: 20px 15px;
+    max-width: 90%;
+  }
+
+  .availability-header {
+    font-size: 12px;
+    padding: 4px 10px;
+    max-width:100%;
+  }
+
+  .availability-options {
+    margin-top:60px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .option {
+    font-size: 12px;
+  }
+
+  .close-btn {
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+  }
+
+  .popup-heading {
+    font-size: 20px;
+    padding-left: 15px;
+  }
+
+  .popup-overlay .underline {
+    width: 50px;
+    margin-left: 15px;
+  }
+}
