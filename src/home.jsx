@@ -9,6 +9,8 @@ import "./home.css";
 import TabLayout from "./Components/html/tabLayout";
 import EnquiryPopup from "../src/Components/html/popup"; 
 
+import Slider1 from "../src/assets/Slider.webp";
+
 
 function Home({ onBrochureClick }) {
   const [showMore, setShowMore] = useState(false);
@@ -38,7 +40,7 @@ function Home({ onBrochureClick }) {
   >
     <SwiperSlide>
       <div className="slide">
-        <img  alt="Banner 1" className="slide-img" />
+        <img src={Slider1} alt="Banner 1" className="slide-img" />
 
         
       </div>
