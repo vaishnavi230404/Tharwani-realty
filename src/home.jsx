@@ -6,6 +6,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'remixicon/fonts/remixicon.css';
 import "./home.css";
+import Logo from "../src/assets/tharwanirealtylogo.jpeg";
 import TabLayout from "./Components/html/tabLayout";
 import EnquiryPopup from "../src/Components/html/popup"; 
 
