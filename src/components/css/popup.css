@@ -36,7 +36,7 @@
 .popup-heading {
   font-size: 24px;
   font-weight: 600;
-  color: #00703C;
+  color:#003f7f;
   margin-bottom: 6px;
   padding-left: 20px;
 }
@@ -73,7 +73,7 @@
 }
 
 .we-promise-header {
-  background-color: #00703C;
+  background-color: #003f7f;
   color: white;
   font-weight: 600;
   font-size: 14px;
@@ -93,7 +93,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 16px;
-  color: #00703C;
+  color:#003f7f;
   font-size: 14px;
 }
 
@@ -104,7 +104,7 @@
 
 .we-promise-list strong {
   font-weight: 600;
-  color: #00703C;
+  color: #003f7f;
 }
 
 .we-promise-list span {
@@ -166,13 +166,13 @@
 }
 
 .checkbox-area label a {
-  color: #00703C;
+  color:#003f7f;
   text-decoration: none;
   margin-left: 2px;
 }
 
 .submit-btn {
-  background-color: #00703C;
+  background-color: #003f7f;
   color: white;
   padding: 10px 20px;
   font-size: 15px;
@@ -191,7 +191,7 @@
 }
 
 .availability-box {
-  border: 2px solid #00703C;
+  border: 2px solid#003f7f;
   border-radius: 0px 40px 0px 40px;
   padding: 30px 20px 20px;
   position: relative;
@@ -202,7 +202,7 @@
 }
 
 .availability-header {
-  background-color: #00703C;
+  background-color: #003f7f;
   color: white;
   font-weight: 600;
   font-size: 14px;
@@ -224,7 +224,7 @@
 
 .option {
   font-size: 13px;
-  color: #00703C;
+  color:#003f7f;
   display: flex;
   align-items: center;
   gap: 6px;

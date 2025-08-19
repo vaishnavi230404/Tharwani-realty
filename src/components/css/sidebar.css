@@ -18,7 +18,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #007b3e; 
+  background-color: #003f7f; 
   color: #ffffff;
   font-family: 'Poppins', sans-serif;
   font-size: 13px;
@@ -49,7 +49,7 @@
 }
 
 .request-call {
-  background: #007b3e;
+  background: #003f7f;
   color: white;
   font-weight: 500;
   padding: 10px 20px;
@@ -70,7 +70,7 @@
 
 .enquire-heading {
   text-align: center;
-  color: #007b3e;
+  color: #003f7f;
   font-weight: 600;
   font-size: 18px;
 }
@@ -138,7 +138,7 @@
 }
 
 .submit-btn {
-  background-color: #007f3f;
+  background-color:#003f7f;
   color: white;
   padding: 10px 30px;
   border: none;
@@ -151,7 +151,7 @@
 }
 
 .submit-btn:hover {
-  background-color: #005f2c;
+  background-color: #003f7f;
 }
 
 .pickup-banner {
@@ -189,7 +189,7 @@
     flex: 1;
     text-align: center;
     padding: 12px 8px;
-    background-color: #007b3e;
+    background-color:#003f7f;
     color: white;
     font-size: 14px;
     font-weight: 600;
@@ -205,14 +205,14 @@
   }
 
   .mobile-action-button.whatsapp {
-    background-color: #25D366;
+    background-color: #003f7f;
   }
 
   .mobile-action-button.call {
-    background-color: #0a9442;
+    background-color: #003f7f;
   }
 
   .mobile-action-button:hover {
-    background-color: #005f2c;
+    background-color: #003f7f;
   }
 }

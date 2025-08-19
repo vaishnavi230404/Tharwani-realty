@@ -17,8 +17,8 @@
 }
 
 .logo {
-  height: 70px;
-  margin-right: 10px;
+  height: 100px;
+  margin-right: 50px;
 }
 
 .text-info {
@@ -147,6 +147,6 @@
   }
 
   .nav-item:hover {
-    color: #226d3d;
+    color: #003f7f;
   }
 }

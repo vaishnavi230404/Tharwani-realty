@@ -129,12 +129,12 @@
 
 .card-price h3 {
   font-size: 1.4rem;
-  color: #007f00;
+  color: #003f7f;
   margin: 4px 0;
 }
 
 .enquire-btn {
-  background: #198754;
+  background: #003f7f;
   color: white;
   font-weight: 600;
   border: none;
@@ -145,7 +145,7 @@
 }
 
 .enquire-btn:hover {
-  background: #146c43;
+  background: #003f7f;
 }
 
 .rera {
@@ -202,7 +202,7 @@
 .read-link {
   display: inline-block;
   margin-bottom: 20px;
-  color: #0066cc;
+  color:#003f7f;
   font-weight: 500;
 }
 
@@ -423,7 +423,7 @@
 
 .amenities-heading {
   font-size: 2rem;
-  color: #006837;
+  color: #003f7f;
   margin-bottom: 20px;
   position: relative;
 }
@@ -474,7 +474,7 @@
 
 .location-heading {
   font-size: 2rem;
-  color: #2a7b3f;
+  color:#003f7f;
   font-weight: 600;
 }
 
@@ -555,7 +555,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #006837; /* dark green */
+  background-color:#003f7f; /* dark green */
   display: none;
   justify-content: space-between;
   z-index: 10000;
