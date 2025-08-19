@@ -1,10 +1,10 @@
 /* === Global Defaults === */
 :root {
-  --green: #0a9442;
-  --green-dark: #087535;
-  --heading-green: #007030;
-  --button-green: #006622;
-  --button-hover: #004d1a;
+  --green:#003f7f;
+  --green-dark:#003f7f;
+  --heading-green:#003f7f;
+  --button-green:#003f7f;
+  --button-hover: #003f7f;
   --gray-bg: #f1f2f2;
   --border-color: #ccc;
 }
@@ -76,7 +76,7 @@
 }
 
 .card-badge {
-  background: #198754;
+  background:#003f7f;
   color: white;
   font-size: 0.85rem;
   font-weight: 600;
