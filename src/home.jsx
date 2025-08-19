@@ -83,9 +83,9 @@ function Home({ onBrochureClick }) {
      </div>
 
       {/* Project Content */}
-      <div className="project-container">
+      <div className="project-container" >
         <div className="project-content">
-          <h2>Mohan Precious Greens</h2>
+          <h2>Welcome To Tharwani Realty</h2>
           <div className="underline" />
 
           <p>

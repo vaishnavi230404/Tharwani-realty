@@ -1,10 +1,10 @@
 /* === Global Defaults === */
 :root {
-  --green: #0a9442;
-  --green-dark: #087535;
-  --heading-green: #007030;
-  --button-green: #006622;
-  --button-hover: #004d1a;
+  --green: #003f7f;
+  --green-dark:#003f7f;
+  --heading-green:#003f7f;
+  --button-green: #003f7f;
+  --button-hover:#021c36;
   --gray-bg: #f1f2f2;
   --border-color: #ccc;
 }
@@ -164,11 +164,14 @@
 
 /* === Project Section === */
 .project-container {
+  background-image: url('../src/assets/texture-bg.webp');  
+  background-size: cover;      
+  background-position: center;  
+  background-repeat: no-repeat;
   margin: 15px 0;
   display: flex;
   flex-wrap: wrap;
   padding: 40px;
-  background: #fff;
   gap: 20px;
   align-items: center;
 }
