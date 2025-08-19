@@ -5,6 +5,7 @@ import { Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'remixicon/fonts/remixicon.css';
+import Logo from "../assets/tharwanirealtylogo.jpeg";
 import "./home.css";
 import TabLayout from "./Components/html/tabLayout";
 import EnquiryPopup from "../src/Components/html/popup"; 
