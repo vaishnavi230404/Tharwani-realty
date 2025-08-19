@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import "../css/sidebar.css";
-import freePickupImage from "../../assets/freepick.png";
 
 const EnquiryForm = ({ onBrochureClick }) => {
   const [name, setName] = useState("");
@@ -116,7 +115,7 @@ const EnquiryForm = ({ onBrochureClick }) => {
       {/* Pickup Banner */}
       <div className="pickup-banner">
         <img
-          src={freePickupImage}
+         
           alt="Pickup & Drop"
           className="pickup-img"
         />

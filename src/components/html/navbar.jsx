@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import '../css/navbar.css';
-import Logo from "../../assets/mohangrrenslogo.png";
 import 'remixicon/fonts/remixicon.css';
 
 function Navbar({ onBrochureClick }) {
@@ -14,7 +13,7 @@ function Navbar({ onBrochureClick }) {
     <nav className="navbar">
       {/* Left: Logo */}
       <div className="navbar-left">
-        <img src={Logo} alt="Mohan Greens" className="logo" />
+        <img  alt="Mohan Greens" className="logo" />
       </div>
 
       {/* Hamburger Icon for Mobile */}

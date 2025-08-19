@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './App.css';
 import Home from './home';
-import Sidebar from "../src/Components/html/sidebar";
-import EnquiryPopup from '../src/Components/html/popup'; 
+import Sidebar from "../src/components/html/sidebar";
+import EnquiryPopup from '../src/components/html/popup'; 
 
 function App() {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
