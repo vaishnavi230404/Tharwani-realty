@@ -83,7 +83,7 @@ function Home({ onBrochureClick }) {
       {/* Project Content */}
       <div className="project-container">
         <div className="project-content">
-          <h2>Mohan Precious Greens</h2>
+          <h2>Tharwani Realty</h2>
           <div className="underline" />
 
           <p>
@@ -92,14 +92,9 @@ function Home({ onBrochureClick }) {
 
           {showMore && (
             <p>
-              Strategically located just minutes away from Ambernath railway
-              station, Mohan Precious Greens offers excellent connectivity to
-              Mumbai, Thane, and surrounding areas. The project enjoys close
-              proximity to reputed schools, hospitals, supermarkets, and daily
-              conveniences, making it a practical choice for families and
-              working professionals alike. With a perfect blend of comfort,
-              connectivity, and lifestyle, it stands as an ideal residential
-              option in the fast-developing Ambernath East locality.
+              We build value beyond real estate.We shape the future of how you live, breathe, and play. Through exceptional service, hospitality, amenities, and technology, we offer an advanced atmosphere of well-being with a passion for building the local community and making your residential property a safe and prosperous place to live and grow old.
+              We aim to be the country's leading real estate developer and the preferred place of residence for home seekers. We consistently strive to develop collaborative partnerships, based on transparency and mutual trust, which build enduring relationships. As we expand, we're committed to these principles, which have served our company and buyers through the years.
+         
             </p>
           )}
 
@@ -167,32 +162,35 @@ function Home({ onBrochureClick }) {
         </div>
       </div>
 
-      {/* <section className="amenities-section">
-      <h2 className="amenities-heading">Amenities</h2>
-      <div className="underline" />
-        <div className="amenities-grid">
-          {amenitiesList.map((amenity, index) => (
-            <div className="amenity-card" key={index}>
-              <img  alt={amenity.name} />
-              <p className="amenity-name">{amenity.name}</p>
-            </div>
-          ))}
-        </div>
-      </section> */}
       
-<div className="map-container">
+      
+  <div className="map-wrapper">
+      {/* Custom Business Info Card */}
+      <div className="info-card">
+        <h3>Tharwani Realty, Tharwani Solitaire.</h3>
+      
+        
+        <a
+          href="https://www.google.com/maps/place/Tharwani+Realty,+Tharwani+Solitaire/@19.0255223,72.8575175,9.12z/data=!4m6!3m5!1s0x3be796a10000006b:0x2a1e635237dec727!8m2!3d19.2477116!4d73.1767857!16s%2Fg%2F11fy_5r0_2?hl=en&entry=ttu&g_ep=EgoyMDI1MDgxNy4wIKXMDSoASAFQAw%3D%3D" 
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+        
+        </a>
+      </div>
+
+      {/* Google Map Embed */}
       <iframe
         title="Tharwani Realty Location"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.941269792469!2d73.14923157518198!3d19.19947038202539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7965f5675f9d7%3A0x52df5a14ac70b2b3!2sTharwani%20Realty%2C%20Tharwani%20Solitaire!5e0!3m2!1sen!2sin!4v1693481612345!5m2!1sen!2sin"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.937338787888!2d73.1767857!3d19.2477116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be796a10000006b%3A0x2a1e635237dec727!2sTharwani%20Realty%2C%20Tharwani%20Solitaire!5e0!3m2!1sen!2sin!4v1693481612345!5m2!1sen!2sin"
         width="100%"
-        height="450"
-        style={{ border: 0 }}
+        height="250"
+        style={{ border: 10, borderRadius: "10px" }}
         allowFullScreen=""
         loading="lazy"
-        referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
     </div>
-  );
+  
 
 
       <TabLayout onBrochureClick={onBrochureClick}/>

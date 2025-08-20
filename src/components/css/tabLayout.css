@@ -23,7 +23,7 @@
 
 .tab-button.active {
   background-color: white;
-  color: #1e6c43;
+  color:#003f7f;
   border: 2px solid #ccc;
   border-bottom: none;
 }

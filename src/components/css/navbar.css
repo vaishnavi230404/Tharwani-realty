@@ -28,7 +28,7 @@
 .project-name {
   font-weight: bold;
   font-size: 14px;
-  color: #1b4d2f;
+  color:#003f7f;
 }
 
 .green-text {
@@ -56,7 +56,7 @@
 }
 
 .nav-item:hover {
-  color: #226d3d;
+  color:#003f7f;
 }
 .nav-item {
   font-size: 18px;
@@ -82,8 +82,8 @@
 
 .nav-item.active {
   font-weight: bold;
-  color: #226d3d;
-  border-bottom: 2px solid #226d3d;
+  color:#003f7f;
+  border-bottom: 2px solid#003f7f;
 }
 
 .navbar-right .blox-logo {
