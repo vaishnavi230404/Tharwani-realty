@@ -490,6 +490,53 @@ project-container {
   border-radius: 0 px 0 px;
 }
 
+.legacy-section {
+
+  padding: 60px 20px;
+  color: #333;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.legacy-overlay {
+  background: rgba(255, 255, 255, 0.6); /* Light overlay */
+  padding: 40px;
+  border-radius: 15px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.legacy-stats {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.stat {
+  flex: 1 1 200px;
+  margin: 15px;
+}
+
+.stat h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #c9a15d; 
+}
+
+.stat p {
+  font-size: 16px;
+  color: #444;
+}
+
+.legacy-text {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #222;
+  max-width: 900px;
+  margin: auto;
+}
+
 .footer-container {
   display: flex;
   flex-direction: column;
