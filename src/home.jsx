@@ -52,25 +52,24 @@ function Home({ onBrochureClick }) {
     </SwiperSlide>
     <div className="property-card-overlay">
           <div className="property-card">
-            <div className="card-badge">New Launch</div>
-            <h2 className="card-title">MOHAN PRECIOUS GREENS</h2>
-            <p className="card-location">Ambernath East, Thane</p>
-            <p className="card-by">By Mohan Group</p>
+            <div className="card-badge">Connect Us</div>
+            <p className="card-location">Kalyan West, Thane</p>
+          
 
             <div className="card-details">
               <div>
-                <span className="label">Land Parcel</span> <span className="value">10 Acres</span>
+                <span className="label">500 Million+</span> <span className="value">SQ.FT. Developed</span>
                 
               </div>
               <div>
-                <span className="label">Floors </span><span className="value">18 Storey</span>
+                <span className="label">3000+ </span><span className="value">Happy Families</span>
                 
               </div>
             </div>
 
             <div className="card-price">
               <p>1 & 2 BHK Homes Start</p>
-              <h3>₹ 36.50 Lacs<sup>*</sup> Onwards</h3>
+              <h3>₹ 29.99 Lacs<sup>*</sup> Onwards</h3>
             </div>
 
             <button className="enquire-btn" onClick={onBrochureClick}>Enquire Now</button>
