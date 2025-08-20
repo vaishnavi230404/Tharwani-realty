@@ -1,18 +1,10 @@
 /* === Global Defaults === */
 :root {
-<<<<<<< HEAD
   --green:#003f7f;
   --green-dark:#003f7f;
   --heading-green:#003f7f;
   --button-green:#003f7f;
   --button-hover: #003f7f;
-=======
-  --green: #003f7f;
-  --green-dark:#003f7f;
-  --heading-green:#003f7f;
-  --button-green: #003f7f;
-  --button-hover:#021c36;
->>>>>>> b52a62b9c3dbbbf5a2c49ccc22461b10055ae8e4
   --gray-bg: #f1f2f2;
   --border-color: #ccc;
 }
