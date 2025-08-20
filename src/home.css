@@ -163,7 +163,7 @@
 }
 
 /* === Project Section === */
-project-container {
+.project-container {
   background-image: url('../src/assets/texture-bg.webp');  
   background-size: cover;      
   background-position: center;  
@@ -468,6 +468,7 @@ project-container {
 }
 
 /* === Location Section === */
+
 .location-section {
   margin: 15px 0;
   padding: 1.5rem 3rem;
@@ -479,6 +480,7 @@ project-container {
   font-size: 2rem;
   color:#003f7f;
   font-weight: 600;
+  text-align: center;
 }
 
 .map-container {
@@ -491,7 +493,6 @@ project-container {
 }
 
 .legacy-section {
-
   padding: 60px 20px;
   color: #333;
   text-align: center;

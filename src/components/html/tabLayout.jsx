@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
-import '../css/tabLayout.css'; 
+import '../css/tabLayout.css';
 import 'remixicon/fonts/remixicon.css';
 
+
 const tabData = {
-  Station: ["Ambernath Railway Station – 2.1 Kms", "Badlapur Railway Station – 7 Kms","Ulhasnagar Railway Station – 6 Km"],
-  "School & Colleges": ["Arya Gurukul – 100 mts", "Ryan International – 1.6 Kms","Infant Jesus School – 1.5 Kms"],
-  Shopping: ["D Mart – 3.7 Kms", "Reliance Smart – 200 Mts","Sawant Arcade Mall – 2.1 Kms","Mohan Galleria Shopping Mall – 5 Kms"],
-  Hospitals: ["Sanjeevani Hospital – 2 Kms", "Vijay Multispecialty – 3.3 Kms","Dr. Koltes Shree Seva Hospital – 4 Kms"]
+  Station: ["Ambernath Railway Station – 2.1 Kms", "Badlapur Railway Station – 7 Kms", "Ulhasnagar Railway Station – 6 Km"],
+  "School & Colleges": ["Arya Gurukul – 100 mts", "Ryan International – 1.6 Kms", "Infant Jesus School – 1.5 Kms"],
+  Shopping: ["D Mart – 3.7 Kms", "Reliance Smart – 200 Mts", "Sawant Arcade Mall – 2.1 Kms", "Mohan Galleria Shopping Mall – 5 Kms"],
+  Hospitals: ["Sanjeevani Hospital – 2 Kms", "Vijay Multispecialty – 3.3 Kms", "Dr. Koltes Shree Seva Hospital – 4 Kms"]
 };
 
 const getTabIcon = (tab) => {

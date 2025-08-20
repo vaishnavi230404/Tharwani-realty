@@ -7,8 +7,12 @@ import 'swiper/css/navigation';
 import 'remixicon/fonts/remixicon.css';
 import "./home.css";
 import TabLayout from "./Components/html/tabLayout";
-import EnquiryPopup from "../src/Components/html/popup"; 
+import EnquiryPopup from "../src/Components/html/popup";
 
+import AboutUsImage from "../src/assets/aboutusimage.webp";
+import BHKUnitPlan from "../src/assets/1bhkunitplan.webp";
+import _2BHKUnitPlan from "../src/assets/2bhkunitplan.webp";
+import Logo from "../src/assets/tharwanirealtylogo.png";
 
 function Home({ onBrochureClick }) {
   const [showMore, setShowMore] = useState(false);
@@ -25,59 +29,59 @@ function Home({ onBrochureClick }) {
   const handleClosePopup = () => setIsPopupOpen(false);
   return (
     <>
-      <Navbar onBrochureClick={() => setIsPopupOpen(true)}  />
+      <Navbar onBrochureClick={() => setIsPopupOpen(true)} />
       <EnquiryPopup isOpen={isPopupOpen} onClose={handleClosePopup} />
       {/* Swiper Slider */}
       <div className="slider-container">
-  <Swiper
-    modules={[Navigation, Autoplay]}
-    navigation
-    autoplay={{ delay: 3000, disableOnInteraction: false }}
-    loop
-    speed={800}
-  >
-    <SwiperSlide>
-      <div className="slide">
-        <img  alt="Banner 1" className="slide-img" />
+        <Swiper
+          modules={[Navigation, Autoplay]}
+          navigation
+          autoplay={{ delay: 3000, disableOnInteraction: false }}
+          loop
+          speed={800}
+        >
+          <SwiperSlide>
+            <div className="slide">
+              <img alt="Banner 1" className="slide-img" />
 
-        
-      </div>
-    </SwiperSlide>
 
-    <SwiperSlide>
-      <div className="slide">
-        <img  alt="Banner 2" className="slide-img" />
-
-         </div>
-    </SwiperSlide>
-    <div className="property-card-overlay">
-          <div className="property-card">
-            <div className="card-badge">Connect Us</div>
-            <p className="card-location">Kalyan West, Thane</p>
-          
-
-            <div className="card-details">
-              <div>
-                <span className="label">500 Million+</span> <span className="value">SQ.FT. Developed</span>
-                
-              </div>
-              <div>
-                <span className="label">3000+ </span><span className="value">Happy Families</span>
-                
-              </div>
             </div>
+          </SwiperSlide>
 
-            <div className="card-price">
-              <p>1 & 2 BHK Homes Start</p>
-              <h3>₹ 29.99 Lacs<sup>*</sup> Onwards</h3>
+          <SwiperSlide>
+            <div className="slide">
+              <img alt="Banner 2" className="slide-img" />
+
             </div>
+          </SwiperSlide>
+          <div className="property-card-overlay">
+            <div className="property-card">
+              <div className="card-badge">Connect Us</div>
+              <p className="card-location">Kalyan West, Thane</p>
 
-            <button className="enquire-btn" onClick={onBrochureClick}>Enquire Now</button>
-            <p className="rera">RERA : P51700046171</p>
+
+              <div className="card-details">
+                <div>
+                  <span className="label">500 Million+</span> <span className="value">SQ.FT. Developed</span>
+
+                </div>
+                <div>
+                  <span className="label">3000+ </span><span className="value">Happy Families</span>
+
+                </div>
+              </div>
+
+              <div className="card-price">
+                <p>1 & 2 BHK Homes Start</p>
+                <h3>₹ 29.99 Lacs<sup>*</sup> Onwards</h3>
+              </div>
+
+              <button className="enquire-btn" onClick={onBrochureClick}>Enquire Now</button>
+              <p className="rera">RERA : P51700046171</p>
+            </div>
           </div>
-        </div>
-  </Swiper>
-     </div>
+        </Swiper>
+      </div>
 
       {/* Project Content */}
       <div className="project-container">
@@ -86,14 +90,14 @@ function Home({ onBrochureClick }) {
           <div className="underline" />
 
           <p>
-           Over the last couple of decades, Tharwani Realty has prided itself on its heritage of excellence, the spirit of entrepreneurship, and strong values. These values and unprecedented vision have resulted in the birth of its many successful luxurious projects such as Tharwani Rosewood Heights and Tharwani Heritage, to name a few. Commitment to excellence and the drive to the transform lives of its customers is what sets the Realty apart.Going forward, Tharwani Realty will merge the philosophy of innovation, sustainability, and excellence into the real estate industry through its upcoming world-class projects that are a combination of a legacy of excellence and trust with a commitment to cutting-edge design and technology.
+            Over the last couple of decades, Tharwani Realty has prided itself on its heritage of excellence, the spirit of entrepreneurship, and strong values. These values and unprecedented vision have resulted in the birth of its many successful luxurious projects such as Tharwani Rosewood Heights and Tharwani Heritage, to name a few. Commitment to excellence and the drive to the transform lives of its customers is what sets the Realty apart.Going forward, Tharwani Realty will merge the philosophy of innovation, sustainability, and excellence into the real estate industry through its upcoming world-class projects that are a combination of a legacy of excellence and trust with a commitment to cutting-edge design and technology.
           </p>
 
           {showMore && (
             <p>
               We build value beyond real estate.We shape the future of how you live, breathe, and play. Through exceptional service, hospitality, amenities, and technology, we offer an advanced atmosphere of well-being with a passion for building the local community and making your residential property a safe and prosperous place to live and grow old.
               We aim to be the country's leading real estate developer and the preferred place of residence for home seekers. We consistently strive to develop collaborative partnerships, based on transparency and mutual trust, which build enduring relationships. As we expand, we're committed to these principles, which have served our company and buyers through the years.
-         
+
             </p>
           )}
 
@@ -112,7 +116,7 @@ function Home({ onBrochureClick }) {
         </div>
 
         <div className="project-image" >
-          <img  alt="Tharwani realty"/>
+          <img src={AboutUsImage} alt="Tharwani realty" />
         </div>
       </div>
 
@@ -145,7 +149,7 @@ function Home({ onBrochureClick }) {
         <div className="layout-card">
           <h2 className="layout-heading">1 BHK Layout</h2>
           <div className="image-box left-rounded">
-            <img alt="1 BHK Plan Layout" className="layout-image" />
+            <img src={BHKUnitPlan} alt="1 BHK Plan Layout" className="layout-image" />
             <div className="overlay-text">Request 1 BHK Plan Layout</div>
           </div>
           <button className="layout-btn" onClick={onBrochureClick}>Request 1 BHK  Plan Layout</button>
@@ -154,82 +158,80 @@ function Home({ onBrochureClick }) {
         <div className="layout-card">
           <h2 className="layout-heading"> 2 BHK Plan Layout</h2>
           <div className="image-box right-rounded">
-            <img  alt="2 BHK Plan Layout" className="layout-image" />
+            <img src={_2BHKUnitPlan} alt="2 BHK Plan Layout" className="layout-image" />
             <div className="overlay-text">Request 2 BHK Plan Layout</div>
           </div>
           <button className="layout-btn" onClick={onBrochureClick}>Request 2 BHK Plan Layout</button>
         </div>
       </div>
 
-      
-      
-  <div className="map-wrapper">
-      {/* Custom Business Info Card */}
-      <div className="info-card">
-        <h3>Tharwani Realty, Tharwani Solitaire.</h3>
-      
-        
-        <a
-          href="https://www.google.com/maps/place/Tharwani+Realty,+Tharwani+Solitaire/@19.0255223,72.8575175,9.12z/data=!4m6!3m5!1s0x3be796a10000006b:0x2a1e635237dec727!8m2!3d19.2477116!4d73.1767857!16s%2Fg%2F11fy_5r0_2?hl=en&entry=ttu&g_ep=EgoyMDI1MDgxNy4wIKXMDSoASAFQAw%3D%3D" 
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-        
-        </a>
-      </div>
+      <div className="map-wrapper" id="location">
+        {/* Custom Business Info Card */}
+        <div className="info-card">
+          <h2 className="location-heading">Tharwani Realty, Tharwani Solitaire.</h2>
+          <div className="underline" />
+          <a
+            href="https://www.google.com/maps/place/Tharwani+Realty,+Tharwani+Solitaire/@19.0255223,72.8575175,9.12z/data=!4m6!3m5!1s0x3be796a10000006b:0x2a1e635237dec727!8m2!3d19.2477116!4d73.1767857!16s%2Fg%2F11fy_5r0_2?hl=en&entry=ttu&g_ep=EgoyMDI1MDgxNy4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
 
-      {/* Google Map Embed */}
-      <iframe
-        title="Tharwani Realty Location"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.937338787888!2d73.1767857!3d19.2477116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be796a10000006b%3A0x2a1e635237dec727!2sTharwani%20Realty%2C%20Tharwani%20Solitaire!5e0!3m2!1sen!2sin!4v1693481612345!5m2!1sen!2sin"
-        width="100%"
-        height="250"
-        style={{ border: 10, borderRadius: "10px" }}
-        allowFullScreen=""
-        loading="lazy"
-      ></iframe>
-    </div>
-<section className="legacy-section">
-      <div className="legacy-overlay">
-        <div className="legacy-stats">
-          <div className="stat">
-            <h2>5+</h2>
-            <p>Million sq.ft<br/>Area Developed</p>
-          </div>
-          <div className="stat">
-            <h2>35+</h2>
-            <p>Projects</p>
-          </div>
-          <div className="stat">
-            <h2>3000+</h2>
-            <p>Happy Families</p>
-          </div>
-          <div className="stat">
-            <h2>30</h2>
-            <p>Years Of<br/>Legacy</p>
-          </div>
+          </a>
         </div>
 
-        <p className="legacy-text">
-          With over <strong>30 years of legacy</strong>, we have developed more than 
-          <strong> 5 million square feet</strong> across <strong>35+ projects</strong>, 
-          bringing happiness to over <strong>3000 families</strong>.
-        </p>
+        {/* Google Map Embed */}
+        <iframe
+          title="Tharwani Realty Location"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.937338787888!2d73.1767857!3d19.2477116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be796a10000006b%3A0x2a1e635237dec727!2sTharwani%20Realty%2C%20Tharwani%20Solitaire!5e0!3m2!1sen!2sin!4v1693481612345!5m2!1sen!2sin"
+          width="100%"
+          height="250"
+          style={{ border: 10, borderRadius: "10px" }}
+          allowFullScreen=""
+          loading="lazy"
+        ></iframe>
       </div>
-    </section>
+
+      <section className="legacy-section">
+        <div className="legacy-overlay">
+          <div className="legacy-stats">
+            <div className="stat">
+              <h2>5+</h2>
+              <p>Million sq.ft<br />Area Developed</p>
+            </div>
+            <div className="stat">
+              <h2>35+</h2>
+              <p>Projects</p>
+            </div>
+            <div className="stat">
+              <h2>3000+</h2>
+              <p>Happy Families</p>
+            </div>
+            <div className="stat">
+              <h2>30</h2>
+              <p>Years Of<br />Legacy</p>
+            </div>
+          </div>
+
+          <p className="legacy-text">
+            With over <strong>30 years of legacy</strong>, we have developed more than
+            <strong> 5 million square feet</strong> across <strong>35+ projects</strong>,
+            bringing happiness to over <strong>3000 families</strong>.
+          </p>
+        </div>
+      </section>
 
 
-      <TabLayout onBrochureClick={onBrochureClick}/>
+     {/*<TabLayout onBrochureClick={onBrochureClick} />*/}
 
       <div className="footer-container">
-        <img alt="Mohan Precious Greens" className="footer-logo" />
-        <img  alt="qr-code" className="qr-code" />
+        <img src={Logo} alt="Mohan Precious Greens" className="footer-logo" />
+        {/*<img alt="qr-code" className="qr-code" />
 
         <p className="maharera-text">Project MahaRERA No. – P51700046171</p>
         <p className="maharera-text">Agent MahaRERA No. – A031332401468</p>
         <p className="maharera-text">(<a href="https://maharera.maharashtra.gov.in/" target="_blank" rel="noreferrer">
           https://maharera.maharashtra.gov.in/</a>)
-        </p>
+        </p>*/}
         <p className="disclaimer">
           Disclaimer : The content is for information purposes only and does not constitute an offer to avail of any service.
           The prices mentioned are subject to change without notice and the properties mentioned are subject to availability.

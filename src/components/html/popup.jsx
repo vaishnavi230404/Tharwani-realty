@@ -18,7 +18,7 @@ const EnquiryPopup = ({ isOpen, onClose }) => {
     }
 
     try {
-      const response = await fetch("https://yourdomain.com/enquiry.php", {
+      const response = await fetch("https://Tharwani-ariana.s-senserealty.in/enquiry.php", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -31,8 +31,8 @@ const EnquiryPopup = ({ isOpen, onClose }) => {
 
         // Brochure download
         const link = document.createElement("a");
-        link.href = "/mohan-precious-greens.pdf";
-        link.download = "mohan-precious-greens.pdf";
+        link.href = "/Tharwani Ariana Brochure_FINAL_R2_Print PDF.pdf";
+        link.download = "Tharwani Ariana Brochure_FINAL_R2_Print PDF.pdf";
         link.click();
 
         // Reset and close
