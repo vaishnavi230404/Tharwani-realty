@@ -19,7 +19,7 @@ if (!$name || !$phone) {
 
 // Prepare email
 $to = "pandeypratham1402@gmail.com"; 
-$subject = "New Enquiry from Mohan Precious Greens Website";
+$subject = "New Enquiry from Tharwani Realty Website";
 $message = "Name: $name\nPhone: $phone\n";
 $headers = "From: no-reply@yourdomain.com";
 

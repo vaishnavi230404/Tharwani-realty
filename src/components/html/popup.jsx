@@ -31,8 +31,8 @@ const EnquiryPopup = ({ isOpen, onClose }) => {
 
         // Brochure download
         const link = document.createElement("a");
-        link.href = "/Tharwani Ariana Brochure_FINAL_R2_Print PDF.pdf";
-        link.download = "Tharwani Ariana Brochure_FINAL_R2_Print PDF.pdf";
+        link.href = "/Tharwani Ariana Brochure_FINAL_R2_Print.pdf";
+        link.download = "Tharwani Ariana Brochure_FINAL_R2_Print.pdf";
         link.click();
 
         // Reset and close
