@@ -164,11 +164,14 @@
 
 /* === Project Section === */
 project-container {
+  background-image: url('../src/assets/texture-bg.webp');  
+  background-size: cover;      
+  background-position: center;  
+  background-repeat: no-repeat;
   margin: 15px 0;
   display: flex;
   flex-wrap: wrap;
   padding: 40px;
-  background: #fff;
   gap: 20px;
   align-items: center;
 }
