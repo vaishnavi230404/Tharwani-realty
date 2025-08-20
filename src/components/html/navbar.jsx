@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import '../css/navbar.css';
 import 'remixicon/fonts/remixicon.css';
-import Logo from "../../assets/tharwanirealtylogo.jpeg";
+import Logo from "../../assets/tharwanirealtylogo.png";
 
 function Navbar({ onBrochureClick }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
