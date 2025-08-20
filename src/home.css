@@ -1,19 +1,26 @@
 /* === Global Defaults === */
 :root {
-  --green:#003f7f;
-  --green-dark:#003f7f;
-  --heading-green:#003f7f;
-  --button-green:#003f7f;
-  --button-hover: #003f7f;
+  --green: #81fe02;
+  --green-dark: #719ae8;
+  --heading-green: #719ae8;
+  --button-green: #719ae8;
+  --button-hover: #81fe02;
   --gray-bg: #f1f2f2;
   --border-color: #ccc;
+  --white: #ffffff;
+
+  /* Additional common colors */
+  --primary-blue: #003f7f;
+  --text-dark: #444;
+  --text-medium: #777;
+  --text-light: #888;
+  --gold: #c9a15d;
 }
 
-  
 /* === Swiper / Slider Section === */
 .slider-container {
   width: 100%;
-  height:90vh;
+  height: 90vh;
 }
 
 .slider-container .swiper {
@@ -42,7 +49,7 @@
 
 .swiper-button-next,
 .swiper-button-prev {
-  color: white;
+  color: var(--white);
   background: rgba(0, 0, 0, 0.4);
   width: 45px;
   height: 45px;
@@ -53,22 +60,23 @@
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
-  font-size: 18px; 
+  font-size: 18px;
 }
+
 .swiper-button-prev {
-  left:40%; 
+  left: 40%;
 }
 
 .swiper-button-next {
-  right: 40%; 
+  right: 40%;
 }
 
-/* You can reuse property-card styles */
+/* === Property Card === */
 .property-card {
   width: 300px;
-  background: white;
+  background: var(--white);
   border-radius: 16px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   padding: 20px;
   font-family: 'Poppins', sans-serif;
   text-align: center;
@@ -76,8 +84,8 @@
 }
 
 .card-badge {
-  background:#003f7f;
-  color: white;
+  background: var(--heading-green);
+  color: var(--white);
   font-size: 0.85rem;
   font-weight: 600;
   padding: 4px 12px;
@@ -96,13 +104,13 @@
 
 .card-location {
   font-size: 0.95rem;
-  color: #444;
+  color: var(--text-dark);
   margin: 0;
 }
 
 .card-by {
   font-size: 0.8rem;
-  color: #777;
+  color: var(--text-medium);
   margin-bottom: 16px;
 }
 
@@ -111,14 +119,14 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  background: #f1f1f1;
+  background: var(--gray-bg);
   padding: 10px 16px;
   border-radius: 8px;
   margin-bottom: 16px;
   font-size: 0.85rem;
 }
 
-.label{
+.label {
   font-weight: bold;
 }
 
@@ -129,13 +137,13 @@
 
 .card-price h3 {
   font-size: 1.4rem;
-  color: #003f7f;
+  color: var(--primary-blue);
   margin: 4px 0;
 }
 
 .enquire-btn {
-  background: #003f7f;
-  color: white;
+  background: var(--primary-blue);
+  color: var(--white);
   font-weight: 600;
   border: none;
   padding: 10px 20px;
@@ -145,12 +153,12 @@
 }
 
 .enquire-btn:hover {
-  background: #003f7f;
+  background: var(--primary-blue);
 }
 
 .rera {
   font-size: 0.75rem;
-  color: #888;
+  color: var(--text-light);
   margin-top: 12px;
 }
 
@@ -164,9 +172,9 @@
 
 /* === Project Section === */
 .project-container {
-  background-image: url('../src/assets/texture-bg.webp');  
-  background-size: cover;      
-  background-position: center;  
+  background-image: url('../src/assets/texture-bg.webp');
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   margin: 15px 0;
   display: flex;
@@ -188,7 +196,7 @@
   font-weight: 700;
 }
 
-.underline{
+.underline {
   width: 50px;
   height: 4px;
   background: var(--border-color);
@@ -197,7 +205,7 @@
 
 .project-content p {
   font-size: 15px;
-  color: #333;
+  color: var(--text-dark);
   margin-bottom: 15px;
   font-weight: 350;
 }
@@ -205,13 +213,13 @@
 .read-link {
   display: inline-block;
   margin-bottom: 20px;
-  color:#003f7f;
+  color: var(--primary-blue);
   font-weight: 500;
 }
 
 .brochure-btn {
-  background-color: var(--green);
-  color: white;
+  background-color: var(--primary-blue);
+  color: var(--white);
   padding: 10px 20px;
   border: none;
   font-size: 16px;
@@ -275,42 +283,38 @@
 
 .pricing-card {
   flex: 50%;
-  background: #fff;
+  background: var(--white);
   border-radius: 20px;
   border: 2px solid var(--border-color);
   padding: 10px 20px;
   width: 380px;
   transition: transform 0.3s ease;
-  
-}
-
-.pricing-card  {
   font-size: 24px;
   font-weight: 700;
-  color: #000;
+  color: var(--text-dark);
   margin-bottom: 10px;
 }
 
 .size {
   font-size: 20px;
-  color: #000000;
+  color: var(--text-dark);
   font-weight: 350;
 }
 
 .price {
   font-size: 24px;
   font-weight: 700;
-  color: var(--heading-green);
+  color: var(--primary-blue);
   margin-bottom: 30px;
 }
 
 .costing-button {
   position: absolute;
-  bottom: -18px; 
+  bottom: -18px;
   left: 50%;
   transform: translateX(-50%);
-  background: var(--green);
-  color: #fff;
+  background: var(--primary-blue);
+  color: var(--white);
   padding: 10px 20px;
   font-size: 15px;
   border: none;
@@ -322,7 +326,7 @@
 }
 
 .costing-button:hover {
-  outline: 3px solid rgba(0, 0, 0, 0.2);  
+  outline: 3px solid rgba(0, 0, 0, 0.2);
   background: var(--green-dark);
 }
 
@@ -334,7 +338,7 @@
   flex-wrap: wrap;
   padding: 40px 0;
   margin: 10px 0;
-  background-color: white;
+  background-color: var(--white);
 }
 
 .layout-card {
@@ -391,15 +395,15 @@
   width: 100%;
   padding: 12px 0;
   background-color: rgba(0, 0, 0, 0.5);
-  color: white;
+  color: var(--white);
   font-size: 18px;
   font-weight: 500;
 }
 
 .layout-btn {
   margin-top: 20px;
-  background-color: var(--button-green);
-  color: white;
+  background-color: var(--primary-blue);
+  color: var(--white);
   border: none;
   padding: 12px 24px;
   border-radius: 5px;
@@ -412,21 +416,20 @@
 
 .layout-btn:hover {
   outline: 3px solid rgba(0, 0, 0, 0.2);
-  background-color: var(--button-hover);
+  background-color: var(--button-green);
 }
 
-/* === Amenties Section====*/
-
+/* === Amenities Section === */
 .amenities-section {
   padding: 40px 20px;
   text-align: center;
-  background-color: white;
-  margin: 10px 0px  ;
+  background-color: var(--white);
+  margin: 10px 0px;
 }
 
 .amenities-heading {
   font-size: 2rem;
-  color: #003f7f;
+  color: var(--primary-blue);
   margin-bottom: 20px;
   position: relative;
 }
@@ -443,7 +446,7 @@
   position: relative;
   overflow: hidden;
   border-radius: 16px;
-  background: #fff;
+  background: var(--white);
   transition: transform 0.3s ease;
 }
 
@@ -453,32 +456,29 @@
   object-fit: cover;
 }
 
-
 .amenity-name {
   padding: 10px 20px;
   font-weight: 500;
   font-size: 14px;
-  color: #333;
+  color: var(--text-dark);
   position: absolute;
   bottom: 40px;
-  width: 100%;
-  background: white;
+  background: var(--white);
   width: fit-content;
-  border-radius: 0px 40px 0px 0px ;
+  border-radius: 0px 40px 0px 0px;
 }
 
 /* === Location Section === */
-
 .location-section {
   margin: 15px 0;
   padding: 1.5rem 3rem;
   text-align: center;
-  background-color: white;
+  background-color: var(--white);
 }
 
 .location-heading {
   font-size: 2rem;
-  color:#003f7f;
+  color: var(--primary-blue);
   font-weight: 600;
   text-align: center;
 }
@@ -489,18 +489,19 @@
   height: 180px;
   margin: 0 auto;
   overflow: hidden;
-  border-radius: 0 px 0 px;
+  border-radius: 0px;
 }
 
+/* === Legacy Section === */
 .legacy-section {
   padding: 60px 20px;
-  color: #333;
+  color: var(--text-dark);
   text-align: center;
   font-family: "Poppins", sans-serif;
 }
 
 .legacy-overlay {
-  background: rgba(255, 255, 255, 0.6); /* Light overlay */
+  background: rgba(255, 255, 255, 0.6);
   padding: 40px;
   border-radius: 15px;
   max-width: 1100px;
@@ -522,12 +523,12 @@
 .stat h2 {
   font-size: 40px;
   font-weight: bold;
-  color: #c9a15d; 
+  color: var(--gold);
 }
 
 .stat p {
   font-size: 16px;
-  color: #444;
+  color: var(--text-dark);
 }
 
 .legacy-text {
@@ -538,18 +539,20 @@
   margin: auto;
 }
 
+/* === Footer Section === */
 .footer-container {
   display: flex;
   flex-direction: column;
   text-align: center;
   padding: 40px 20px;
-  background-color: #fff;
+  background-color: var(--white);
   font-family: 'Poppins', sans-serif;
   color: #111;
 }
 
 .footer-logo {
-  max-width: 150px;
+  max-width: 200px;
+  max-height: 200px;
   margin: 0 auto;
 }
 
@@ -559,13 +562,12 @@
   text-align: center;
 }
 
-.footer-text{
+.footer-text {
   font-size: 12px;
 }
 
-
 .footer-text a {
-  color: #0056b3;
+  color: var(--primary-blue);
   font-size: 10px !important;
   text-decoration: none;
 }
@@ -577,7 +579,7 @@
 .disclaimer {
   font-size: 11px;
   margin-top: 20px;
-  color: #444;
+  color: var(--text-dark);
   padding: 0 10px;
   text-align: left;
   font-weight: 200;
@@ -587,26 +589,27 @@
   margin-top: 20px;
   text-align: center;
   font-size: 11px;
-  color: #555;
+  color: var(--text-medium);
 }
 
 .footer-bottom a {
-  color: #0056b3;
+  color: var(--primary-blue);
   text-align: center;
   margin: 0 5px;
 }
 
 .footer-bottom a:hover {
   text-decoration: underline;
-   text-align: center;
+  text-align: center;
 }
 
+/* === Mobile Action Bar === */
 .mobile-action-bar {
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color:#003f7f; /* dark green */
+  background-color: var(--primary-blue);
   display: none;
   justify-content: space-between;
   z-index: 10000;
@@ -621,7 +624,7 @@
   padding: 10px 0;
   font-size: 14px;
   font-weight: 600;
-  color: white;
+  color: var(--white);
   background-color: transparent;
   text-decoration: none;
   border-right: 1px solid rgba(255, 255, 255, 0.3);
@@ -640,8 +643,8 @@
   font-size: 16px;
 }
 
+/* === Responsive Styles === */
 @media (max-width: 768px) {
-  /* === Slider === */
   .slider-container {
     height: 220px;
   }
@@ -665,7 +668,6 @@
     right: 0%;
   }
 
-  /* === Property Card === */
   .property-card {
     width: 90%;
     height: 50%;
@@ -708,7 +710,6 @@
     display: none;
   }
 
-  /* === Project Section === */
   .project-container {
     flex-direction: column;
     padding: 20px;
@@ -734,7 +735,6 @@
     padding: 8px 16px;
   }
 
-  /* === Pricing Section === */
   .pricing-container {
     padding: 30px 10px;
   }

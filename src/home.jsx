@@ -13,6 +13,9 @@ import AboutUsImage from "../src/assets/aboutusimage.webp";
 import BHKUnitPlan from "../src/assets/1bhkunitplan.webp";
 import _2BHKUnitPlan from "../src/assets/2bhkunitplan.webp";
 import Logo from "../src/assets/tharwanirealtylogo.png";
+import Banner1 from "../src/assets/banner1.webp";
+import Banner2 from "../src/assets/banner2.webp";
+
 
 function Home({ onBrochureClick }) {
   const [showMore, setShowMore] = useState(false);
@@ -42,15 +45,13 @@ function Home({ onBrochureClick }) {
         >
           <SwiperSlide>
             <div className="slide">
-              <img alt="Banner 1" className="slide-img" />
-
-
+              <img src={Banner1} alt="Banner 1" className="slide-img" />
             </div>
           </SwiperSlide>
 
           <SwiperSlide>
             <div className="slide">
-              <img alt="Banner 2" className="slide-img" />
+              <img src={Banner2} alt="Banner 2" className="slide-img" />
 
             </div>
           </SwiperSlide>
@@ -86,7 +87,7 @@ function Home({ onBrochureClick }) {
       {/* Project Content */}
       <div className="project-container">
         <div className="project-content">
-          <h2>Tharwani Realty</h2>
+          <h2>Welcome To Tharwani Realty</h2>
           <div className="underline" />
 
           <p>
