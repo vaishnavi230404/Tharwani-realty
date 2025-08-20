@@ -189,7 +189,34 @@ function Home({ onBrochureClick }) {
         loading="lazy"
       ></iframe>
     </div>
+<section className="legacy-section">
+      <div className="legacy-overlay">
+        <div className="legacy-stats">
+          <div className="stat">
+            <h2>5+</h2>
+            <p>Million sq.ft<br/>Area Developed</p>
+          </div>
+          <div className="stat">
+            <h2>35+</h2>
+            <p>Projects</p>
+          </div>
+          <div className="stat">
+            <h2>3000+</h2>
+            <p>Happy Families</p>
+          </div>
+          <div className="stat">
+            <h2>30</h2>
+            <p>Years Of<br/>Legacy</p>
+          </div>
+        </div>
 
+        <p className="legacy-text">
+          With over <strong>30 years of legacy</strong>, we have developed more than 
+          <strong> 5 million square feet</strong> across <strong>35+ projects</strong>, 
+          bringing happiness to over <strong>3000 families</strong>.
+        </p>
+      </div>
+    </section>
 
 
       <TabLayout onBrochureClick={onBrochureClick}/>
