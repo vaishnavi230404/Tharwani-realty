@@ -146,7 +146,7 @@ function Home({ onBrochureClick }) {
         <div className="layout-card">
           <h2 className="layout-heading">1 BHK Layout</h2>
           <div className="image-box left-rounded">
-            <img alt="Master Plan" className="layout-image" />
+            <img alt="1 BHK Plan Layout" className="layout-image" />
             <div className="overlay-text">Request 1 BHK Plan Layout</div>
           </div>
           <button className="layout-btn" onClick={onBrochureClick}>Request 1 BHK  Plan Layout</button>
@@ -155,7 +155,7 @@ function Home({ onBrochureClick }) {
         <div className="layout-card">
           <h2 className="layout-heading"> 2 BHK Plan Layout</h2>
           <div className="image-box right-rounded">
-            <img  alt="Unit Plan" className="layout-image" />
+            <img  alt="2 BHK Plan Layout" className="layout-image" />
             <div className="overlay-text">Request 2 BHK Plan Layout</div>
           </div>
           <button className="layout-btn" onClick={onBrochureClick}>Request 2 BHK Plan Layout</button>
@@ -190,7 +190,7 @@ function Home({ onBrochureClick }) {
         loading="lazy"
       ></iframe>
     </div>
-  
+
 
 
       <TabLayout onBrochureClick={onBrochureClick}/>
