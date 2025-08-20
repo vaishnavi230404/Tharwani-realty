@@ -40,8 +40,7 @@ const EnquiryForm = ({ onBrochureClick }) => {
           <span className="phone-icon"></span>+919890834878
         </div>
       </div>
-
-      {/* Call Back Box */}
+   {/* Call Back Box */}
       <div className="call-back-box">
         <button className="request-call" onClick={onBrochureClick}>Request Call Back</button>
         <a
@@ -56,7 +55,6 @@ const EnquiryForm = ({ onBrochureClick }) => {
           />
         </a>
       </div>
-
       {/* Enquiry Heading */}
       <h3 className="enquire-heading">ENQUIRE NOW</h3>
 
