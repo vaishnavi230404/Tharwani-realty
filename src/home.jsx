@@ -125,8 +125,8 @@ function Home({ onBrochureClick }) {
           <div className="pricing-item">
             <div className="pricing-card">
               <h3>1 BHK</h3>
-              <p className="size">500 Sq. ft</p>
-              <p className="price">₹ 36.50 Lacs* Onwards</p>
+              <p className="size">490 Sq. ft</p>
+              <p className="price">₹ 29.99 Lacs* Onwards</p>
             </div>
             <button className="costing-button" onClick={onBrochureClick}>Complete Costing Details</button>
           </div>
@@ -134,8 +134,8 @@ function Home({ onBrochureClick }) {
           <div className="pricing-item">
             <div className="pricing-card">
               <h3>2 BHK</h3>
-              <p className="size">610–710 Sq. ft</p>
-              <p className="price">₹ 52.50 Lacs* Onwards</p>
+              <p className="size">690 Sq. ft</p>
+              <p className="price">₹ 39.99 Lacs* Onwards</p>
             </div>
             <button className="costing-button" onClick={onBrochureClick}>Complete Costing Details</button>
           </div>
@@ -144,21 +144,21 @@ function Home({ onBrochureClick }) {
 
       <div className="layout-container" id="site-plan">
         <div className="layout-card">
-          <h2 className="layout-heading">Master Plan Layout</h2>
+          <h2 className="layout-heading">1 BHK Layout</h2>
           <div className="image-box left-rounded">
             <img alt="Master Plan" className="layout-image" />
-            <div className="overlay-text">Request Master Plan Layout</div>
+            <div className="overlay-text">Request 1 BHK Plan Layout</div>
           </div>
-          <button className="layout-btn" onClick={onBrochureClick}>Request Master Plan Layout</button>
+          <button className="layout-btn" onClick={onBrochureClick}>Request 1 BHK  Plan Layout</button>
         </div>
 
         <div className="layout-card">
-          <h2 className="layout-heading">Unit Plan Layout</h2>
+          <h2 className="layout-heading"> 2 BHK Plan Layout</h2>
           <div className="image-box right-rounded">
             <img  alt="Unit Plan" className="layout-image" />
-            <div className="overlay-text">Request Unit Plan Layout</div>
+            <div className="overlay-text">Request 2 BHK Plan Layout</div>
           </div>
-          <button className="layout-btn" onClick={onBrochureClick}>Request Unit Plan Layout</button>
+          <button className="layout-btn" onClick={onBrochureClick}>Request 2 BHK Plan Layout</button>
         </div>
       </div>
 
