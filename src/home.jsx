@@ -222,8 +222,7 @@ function Home({ onBrochureClick }) {
       <TabLayout onBrochureClick={onBrochureClick}/>
 
       <div className="footer-container">
-        <img alt="Mohan Precious Greens" className="footer-logo" />
-        <img  alt="qr-code" className="qr-code" />
+       
 
         <p className="maharera-text">Project MahaRERA No. – P51700046171</p>
         <p className="maharera-text">Agent MahaRERA No. – A031332401468</p>
