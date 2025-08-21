@@ -9,6 +9,9 @@ const CallEnquiryPopup = ({ isOpen, onClose }) => {
   const [consent, setConsent] = useState(false);
   const [loading, setLoading] = useState(false);
 
+  // Replace this with the number you want the call to go to
+  const targetCallNumber = "+919890834878";
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -21,7 +24,7 @@ const CallEnquiryPopup = ({ isOpen, onClose }) => {
       setLoading(true);
 
       // send enquiry to backend (email or DB)
-      const response = await fetch("https://Tharwani-ariana.s-senserealty.in/enquiry.php", {
+      const response = await fetch("https://Tharwani-ariana.s-senserealty.in/Callenquiry.php", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -32,10 +35,9 @@ const CallEnquiryPopup = ({ isOpen, onClose }) => {
       setLoading(false);
 
       if (response.ok) {
-        alert("Thank you! We will call you now.");
-
-        // Trigger call
-        window.location.href = `tel:${phone}`;
+        
+        // Trigger call to specific number
+        window.location.href = `tel:${targetCallNumber}`;
 
         // Reset and close
         setPhone("");
