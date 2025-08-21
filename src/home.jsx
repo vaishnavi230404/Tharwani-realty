@@ -8,6 +8,7 @@ import 'remixicon/fonts/remixicon.css';
 import "./home.css";
 import TabLayout from "./Components/html/tabLayout";
 import EnquiryPopup from "../src/Components/html/popup";
+import CallEnquiryPopup from "./components/html/CallPopup";
 
 import AboutUsImage from "../src/assets/aboutusimage.webp";
 import BHKUnitPlan from "../src/assets/1bhkunitplan.webp";
@@ -20,6 +21,7 @@ import Banner2 from "../src/assets/banner2.webp";
 function Home({ onBrochureClick }) {
   const [showMore, setShowMore] = useState(false);
   const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [isCallPopupOpen, setIsCallPopupOpen] = useState(false);
   /*const amenitiesList = [
     { name: 'Kids Play Area', img: Kidsplay },
     { name: 'Multipurpose Court', img: Court },
@@ -251,9 +253,9 @@ function Home({ onBrochureClick }) {
 
       {/* Mobile Bottom Buttons */}
       <div className="mobile-action-bar">
-        <a href="tel:+919890834878" className="action-button">
+        <button className="action-button" onClick={() => setIsCallPopupOpen(true)}>
           <i className="ri-phone-line"></i> Call
-        </a>
+        </button>
         <button className="action-button" onClick={() => setIsPopupOpen(true)}>
           <i className="ri-edit-line"></i> Enquire
         </button>
@@ -261,6 +263,11 @@ function Home({ onBrochureClick }) {
           <i className="ri-whatsapp-line"></i> WhatsApp
         </a>
       </div>
+
+      <CallEnquiryPopup 
+        isOpen={isCallPopupOpen} 
+        onClose={() => setIsCallPopupOpen(false)} 
+      />
     </>
   );
 }
